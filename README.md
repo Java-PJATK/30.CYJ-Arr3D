@@ -6,8 +6,6 @@ In the next example, we use a three-dimensional array of ints: the first index c
 # Listing 30 CYJ-Arr3D/Arr3D.java
 
 ```java
-// CYJ-Arr3D/Arr3D.java
- 
 public class Arr3D {
 
     public static void main(String[] args) {
@@ -68,9 +66,9 @@ The variable `grades` is really a reference (pointer) to an array of references 
 
 For example, `grades[1][1]` is the reference to the array of grades of the second student and of the second course (the one with elements 5, 2, 3, 3, 4). Therefore, `grades[1][1].length` is 5. Finally, `grades[1][1][4]` is of type int and has value 4.  
 
-The loop in lines 31-43 is a nested loop: we iterate over students (index s) and for each student we calculate the average of his/her grades — in num we will collect number of grades and in ave the sum of grades. If the average of all this student’s grades is grater than 4, we add his/her name to the array `pom`. 
+The loop in lines 31-43 is a nested loop: we iterate over students (index s) and for each student we calculate the average of his/her grades — in `num` we will collect number of grades and in `ave` the sum of grades. If the average of all this student’s grades is grater than 4, we add his/her name to the array `pom`. 
 
-This array is created before the loop; as we don’t know in advance what the number of ’good’ students will be, we create it with size grades.length and then, when we are done (line 45) and we know this number, we create another array, result of the correct size and copy elements from `pom` to `results`, which is then printed
+This array is created before the loop; as we don’t know in advance what the number of ’good’ students will be, we create it with size `grades.length` and then, when we are done (line 45) and we know this number, we create another array, result of the correct size and copy elements from `pom` to `results`, which is then printed
 
 ```
 Best students of the group: Jim Jack
